@@ -1,0 +1,24 @@
+{
+  "primary": {
+    "currency": "PKR",
+    "locale": "en",
+    "market": "pk"
+  },
+  "markets": [
+    {
+      "handle": "pk",
+      "currency": "PKR",
+      "locale": "en"
+    },
+    {
+      "handle": "us",
+      "currency": "USD",
+      "locale": "en"
+    },
+    {
+      "handle": "ae",
+      "currency": "AED",
+      "locale": "en"
+    }
+  ]
+}
