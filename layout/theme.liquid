@@ -75,10 +75,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Theme JS -->
-  {% if 'theme.js' | asset_url %}
+  {% if 'theme.js' %}
     {{ 'theme.js' | asset_url | script_tag }}
   {% endif %}
-  {% if 'chatbot.js' | asset_url %}
+  {% if 'chatbot.js' %}
     {{ 'chatbot.js' | asset_url | script_tag }}
   {% endif %}
 
@@ -96,3 +96,16 @@
 </body>
 </html>
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if 'theme.js' | asset_url %}"
+  to: "{% if 'theme.js' %}"
+  position: 2560..2579
+- from: "{% if 'chatbot.js' | asset_url %}"
+  to: "{% if 'chatbot.js' %}"
+  position: 2642..2663
+{% endcomment %}
